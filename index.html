@@ -7,16 +7,21 @@
 <script type="text/javascript" src="http://www.ign.gob.ar/argenmap/argenmap.jquery.min.js"></script>
 <script>
 $(function() {
-  //El div tiene id="mapa"
   $('#mapa').argenmap();
-  $('#mapa').centro(-34.6476, -58.4170);
-  $('#mapa').zoom(12);
+  $('#mapa').centro(-34.575808, -58.475409);
+  $('#mapa').zoom(10);
 
   var sumideros_vega = {
     url:'http://aaizemberg.github.io/agua/s_vega.kml',
     nombre:'sumideros del arroyo vega'
   };
   $('#mapa').agregarCapaKML( sumideros_vega );
+
+  var buffer_50m = {
+    url:'http://aaizemberg.github.io/agua/vega_50m.kml',
+    nombre:'buffer de 50 mts sobre el arroyo vega'
+  };
+  $('#mapa').agregarCapaKML( buffer_50m );
 });
 </script>
 </head>
