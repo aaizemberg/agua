@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="http://www.ign.gob.ar/argenmap/argenmap.jquery.min.js"></script>
+<script>
+$(function() {
+  //El div tiene id="mapa"
+  $('#mapa').argenmap();
+  $('#mapa').centro(-34.6476, -58.4170);
+  $('#mapa').zoom(12);
+
+  var sumideros_vega = {
+    url:'s_vega.kml',
+    nombre:'sumideros del arroyo vega'
+  };
+  $('#mapa').agregarCapaKML( sumideros_vega );
+});
+</script>
+</head>
+<body>
+  <p>356 sumideros del arroyo vega (100 mts)</p>
+
+  <div id="mapa" style="height:400px"></div>
+
+</body>
+</html>
