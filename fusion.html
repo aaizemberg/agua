@@ -22,6 +22,14 @@ function initialize() {
   });
   map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(document.getElementById('googft-legend'));
 
+  buffer = new google.maps.FusionTablesLayer({
+    query: {
+      select: "'geometry'",
+      from: '151c0Xrz81_zPR7MBAHECp0ObE-1I9Y0lHz_dAVk'
+    },
+    map: map
+  });
+
   layer = new google.maps.FusionTablesLayer({
     map: map,
     heatmap: { enabled: false },
