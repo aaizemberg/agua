@@ -1,4 +1,4 @@
-# Mapa de los sumideros que el gobierno de la ciudad deberia mantener sin basura atascada, para que no nos inundemos otra vez, solo se muestra los del Arroyo Vega.
+# Mapa de los sumideros que el gobierno de la ciudad debería mantener sin basura atascada, para que no nos inundemos otra vez, solo se muestra los del Arroyo Vega.
 http://aaizemberg.github.io/agua/
 
 ## Artículo en la wikipedia sobre la inundación del 2 de abril en la Ciudad de Buenos Aires
